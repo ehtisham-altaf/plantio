@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.62d414c2.css",
+    "main.js": "/static/js/main.a58fed6f.js",
+    "static/media/shopnow.jpg": "/static/media/shopnow.ca712c272743ff9767ca.jpg",
+    "static/media/signupbg.jpg": "/static/media/signupbg.83150757f399833c1cf8.jpg",
+    "static/media/hero6.png": "/static/media/hero6.3cd015d760e10250422f.png",
+    "static/media/signup.jpg": "/static/media/signup.8bdc022c2b02a936859c.jpg",
+    "static/media/service3.jpg": "/static/media/service3.317316f6eb700a94c2ed.jpg",
+    "static/media/service2.jpg": "/static/media/service2.edb68ed5626501d27a54.jpg",
+    "static/media/service1.jpg": "/static/media/service1.c92ff4c3af105718a6c7.jpg",
+    "static/media/hero7.png": "/static/media/hero7.7d7f80117ca956fe7393.png",
+    "static/media/hero2.jpg": "/static/media/hero2.a7a60687e2174bf78865.jpg",
+    "static/media/hero8.png": "/static/media/hero8.27fbcd9501177af36de7.png",
+    "static/media/aboutimg2.png": "/static/media/aboutimg2.bbcee499617bd941ba45.png",
+    "static/media/guarantee.png": "/static/media/guarantee.09c3a11546ba8c6dd86a.png",
+    "static/media/home-delivery.png": "/static/media/home-delivery.6f0d34925c47af696ece.png",
+    "static/media/logo.png": "/static/media/logo.c5972fc0c275ee590ab0.png",
+    "static/media/cart-empty.png": "/static/media/cart-empty.cd77ddfc46817d595483.png",
+    "static/media/fast-delivery.png": "/static/media/fast-delivery.90f52645b4dbabbae3da.png",
+    "static/media/customer-service2.png": "/static/media/customer-service2.845f26ef49abcf16be43.png",
+    "index.html": "/index.html",
+    "main.62d414c2.css.map": "/static/css/main.62d414c2.css.map",
+    "main.a58fed6f.js.map": "/static/js/main.a58fed6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62d414c2.css",
+    "static/js/main.a58fed6f.js"
+  ]
+}

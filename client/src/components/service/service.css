@@ -1,0 +1,81 @@
+.service__box
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+   
+
+}
+
+
+.service_title
+{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    font-family: 'Libre Baskerville', 'sans-serif';
+    font-size: 18px;
+    margin: 4% 0;
+    gap: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: rgb(5, 29, 5);
+ 
+
+}
+.arrow
+{
+  display: flex;
+  margin-left: 10px;
+  font-weight: 100;
+  color: rgba(128, 128, 128, 0.76);
+  transition: 0.3s all ease-in-out;
+
+}
+
+.service_title:hover .arrow
+{
+ margin-left: 15px;
+ color: rgb(10, 49, 10);
+}
+
+.line
+{
+  width: 0px;
+  height: 1px;
+  background-color:rgb(10, 49, 10);
+  margin-bottom: 3%;
+  transition: 0.3s all ease-in-out;
+}
+
+
+
+.service_title:hover .line
+{
+  width: 100%;
+  
+}
+
+
+
+
+
+
+@media only screen and (min-width:768px)
+{
+  
+  .service_title
+  {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width:1024px)
+{
+  
+  .service_title
+  {
+    font-size: 28px;
+  }
+}

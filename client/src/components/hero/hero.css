@@ -1,0 +1,78 @@
+.pink__blur1
+{
+display: flex;
+position: absolute;
+width: 30%;
+height: 30%;
+background-color: pink;
+clip-path: circle();
+filter: blur(212px);
+z-index: -999;
+left: 0;
+margin-top: 10%;
+margin-left: 10%;
+}
+
+
+.pink__blur2
+{
+display: flex;
+position: absolute;
+width: 20%;
+height: 20%;
+background-color: pink;
+clip-path: circle();
+filter: blur(150px);
+z-index: -999;
+left: 0;
+margin-top: 20%;
+margin-left: 0%;
+}
+
+
+.pink__blur3
+{
+display: flex;
+position: absolute;
+width: 30%;
+height: 30%;
+background-color: pink;
+clip-path: circle();
+filter: blur(250px);
+z-index: -999;
+left: 0;
+margin-top: -5%;
+margin-left: -13%;
+}
+
+
+.pink__blur4
+{
+display: flex;
+position: absolute;
+width: 15%;
+height: 15%;
+background-color: pink;
+clip-path: circle();
+filter: blur(70px);
+z-index: -999;
+left: 0;
+margin-top: 32%;
+margin-left: 9%;
+}
+
+
+.pink__blur5
+{
+display: flex;
+position: absolute;
+width: 45%;
+height: 45%;
+background-color: pink;
+clip-path: circle();
+filter: blur(350px);
+z-index: -999;
+left: 0;
+margin-top: 20%;
+margin-left: 39%;
+}
