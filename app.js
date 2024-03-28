@@ -2,39 +2,44 @@ const dotenv = require("dotenv");
 dotenv.config();
 const express = require("express");
 const connectToMongo = require("./database/db");
+const path = require("path");
+
 const app = express();
+
+// Connect to MongoDB
 connectToMongo();
+
+// Define port
 const appPort = process.env.PORT || 2000;
 
+// Middleware for JSON parsing
+app.use(express.json({ limit: "50mb" }));
 
+// Serve static files from the client directory
+app.use(express.static(path.join(__dirname, 'client', 'build v2')));
+
+// Routes
+app.use("/api/auth", require("./router/auth"));
+app.use("/api/products", require("./router/product_route"));
+
+// Catch all route to serve the index.html for any other route
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'client', 'build v2', 'index.html'));
+});
+
+// Start the server
 const server = app.listen(appPort, () => {
-    console.log(`backend server is up on ${appPort}`)
-})
+  console.log(`Backend server is up on port ${appPort}`);
+});
 
-//unexpected error handling
+// Error handling
 process.on("uncaughtException", (err) => {
-  console.log(`Logged Error from index js: ${err.stack}`);
+  console.error(`Uncaught Exception: ${err.stack}`);
   server.close(() => process.exit(1));
-})
+});
 
-
-
-
-//with use of this our appliction will be abel to accept json inputs
-app.use(express.json({limit : 52428800})); //this is 50mb in bytes
-app.get("*",(req,res) => {
-  res.sendFile(path.resolve(__dirname,'client','build v2','index.html'));
-})
-
-if (process.env.NDOE_ENV == "production")
-{
-  app.use(express.static("client/build v2"));
-  const path = require("path");
-  app.get("*",(req,res) => {
-    res.sendFile(path.resolve(__dirname,'client','build v2','index.html'));
-  })
-}
-
-  app.use("/api/auth", require("./router/auth"));
-  app.use("/api/products", require("./router/product_route"));
-
+// Handle other unexpected errors
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+  // Recommended: log the error and close the server gracefully
+});
